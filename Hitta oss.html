@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>P Skolan</title>
+    <link rel="stylesheet" type="text/css" href="site/css/style.css"/>
+
+    <div id="title">
+        <a href="index.html">P Skolan</a>
+    </div>
+
+    <div id="links">
+        <ul>
+            <li><a href="Hitta oss.html">Hitta oss</a></li>
+            <li><a href="kontakt.html">Kontakta oss</a></li>
+            <li><a href="om%20skolan.html">Om skolan</a></li>
+            <li><a href="nyheter.html">Nyheter</a></li>
+        </ul>
+    </div>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple markers</title>
+    <style>
+        html, body, #map-canvas {
+            height: 96%;
+            margin: 0px;
+            padding: 0px
+        }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+    <script>
+        function initialize() {
+            var myLatlng = new google.maps.LatLng(59.180357,17.932294);
+            var mapOptions = {
+                zoom: 18,
+                center: myLatlng
+            }
+            var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: 'Hello World!'
+            });
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+</head>
+<body>
+<div id="map-canvas"></div>
+</body>
+
+
+</head>
+<body>
+
+</body>
+</html>
