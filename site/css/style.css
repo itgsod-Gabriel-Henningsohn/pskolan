@@ -28,10 +28,8 @@ a {
 }
 
 #larare {
-    float: left;
-    width: 600px;
-    height: 90px;
-    text-align: center;
+    margin-left: 100px;
+    text-align: left;
     font-size: 30px;
     font-style: italic;
 }
